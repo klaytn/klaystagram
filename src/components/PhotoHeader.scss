@@ -1,0 +1,19 @@
+.PhotoHeader {
+  padding: 24px 24px 24px 72px;
+  border-bottom: 1px solid $light-grey;
+  background: 24px center / 40px no-repeat url('/images/icon-profile.png');
+}
+
+.PhotoHeader__owner {
+  display: block;
+  font-weight: bold;
+  line-height: 20px;
+  @include textEllipsis();
+  &:hover { text-decoration: underline; }
+}
+
+.PhotoHeader__location {
+  color: $brown-grey;
+  line-height: 20px;
+  @include textEllipsis();
+}

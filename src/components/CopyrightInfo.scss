@@ -1,0 +1,58 @@
+.CopyrightInfo {
+  position: relative;
+  z-index: 10;
+}
+
+.CopyrightInfo__info {
+  position: absolute;
+  top: 38px;
+  right: -12px;
+  padding: 16px;
+  font-size: 12px;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,.8);
+  box-shadow: 0 3px 6px 0 rgba(45, 50, 65, 0.25);
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 8px;
+    transform: translate(-50%, -99.5%);
+    border-top: none;
+    border-bottom: 10px solid rgba(0,0,0,.8);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+  }
+}
+
+.CopyrightInfo__header {
+  margin-bottom: 16px;
+  @include clear-both();
+}
+
+.CopyrightInfo__id {
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  color: $white;
+}
+
+.CopyrightInfo__registerDate {
+  float: right;
+  color: $brown-grey;
+}
+
+.CopyrightInfo__owner {
+  color: $white;
+  margin-top: 8px;
+}
+
+.CopyrightInfo__ownerLink {
+  display: block;
+  margin-top: 4px;
+  color: $brown-grey;
+
+  &:hover { text-decoration: underline; }
+}

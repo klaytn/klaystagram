@@ -1,0 +1,49 @@
+.Feed {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include breakpoint("max-card") {
+    padding: 40px 0;
+  }
+}
+
+.FeedPhoto {
+  position: relative;
+  width: 100%;
+  max-width: $max-card-width;
+  margin-bottom: 60px;
+  &:last-child { margin-bottom: 0; }
+  @include cardBox();
+  @include breakpoint("max-card") {
+    margin-bottom: 20px;
+  }
+}
+
+.FeedPhoto__image {
+  width: 100%;
+  img { width: 100%; }
+}
+
+.FeedPhoto__info {
+  position: relative;
+  padding: 24px 24px 40px 24px;
+}
+
+.FeedPhoto__copyrightInfo,
+.FeedPhoto__transferOwnership {
+  position: absolute;
+  top: 20px;
+}
+
+.FeedPhoto__copyrightInfo { right: 24px; }
+.FeedPhoto__transferOwnership { right: 64px; }
+
+.Feed__empty {
+  font-size: 20px;
+  font-weight: bold;
+  @include fixed-center();
+}

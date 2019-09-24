@@ -1,0 +1,60 @@
+.InputFile {
+  position: relative;
+  font-size: 14px;
+  border: 1px solid $light-grey;
+  border-radius: 5px;
+  margin-top: 26px;
+  @include clear-both();
+  &--err { border-color: $alert-red; }
+}
+
+.InputFile__label {
+  position: absolute;
+  top: -26px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  color: $brown-grey;
+}
+
+.InputFile__button {
+  float: right;
+  display: block;
+  width: 120px;
+  height: 62px;
+  line-height: 62px;
+  text-align: center;
+  font-weight: bold;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: $white;
+  background-color: $dark-brown;
+  cursor: pointer;
+}
+
+.InputFile__input {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.InputFile__fileName {
+  float: left;
+  padding: 22px 24px;
+  text-align: left;
+  color: $black;
+  @include textEllipsis();
+
+  &--empty { color: $middle-grey; }
+}
+
+.InputFile__err {
+  position: absolute;
+  top: -22px;
+  right: 0;
+  font-size: 12px;
+  color: $alert-red;
+}

@@ -1,0 +1,25 @@
+.TransferOwnership__copyright {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: center / contain no-repeat url('/images/icon-copyright.png');
+    margin-bottom: 8px;
+  }
+}
+
+.TransferOwnership__issueDate {
+  font-size: 12px;
+  color: $middle-grey;
+  margin-bottom: 36px;
+}
+
+.TransferOwnership__from,
+.TransferOwnership__to {
+  margin-bottom: 24px;
+}

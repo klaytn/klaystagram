@@ -1,0 +1,92 @@
+.Toast {
+  position: fixed;
+  top: 100px;
+  right: 30px;
+  width: 400px;
+  padding: 22px 24px;
+  z-index: 10;
+  border-radius: 3px;
+  color: $white;
+  background-color: rgba($dark-brown, .9);
+  opacity: 0;
+  animation: showToast 10s;
+}
+
+.Toast__status {
+  display: inline-block;
+  padding: 3px 5px;
+  margin-bottom: 8px;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1;
+  border-radius: 3px;
+  color: $dark-brown;
+  background-color: $white;
+
+  &--pending { background-color: $light-grey; }
+  &--fail, &--error { background-color: $alert-red; color: $white; }
+}
+
+.Toast__message {
+  font-size: 14px;
+  color: $white;
+  margin-bottom: 10px;
+}
+
+.Toast__txHash {
+  display: block;
+  position: relative;
+  width: 100%;
+  font-size: 12px;
+  line-height: 1;
+  padding-left: 15px;
+  color: $white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0.6;
+
+  &::before {
+    content: "---";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 12px;
+    background-color: $white;
+    border-radius: 1px;
+    line-height: 3px;
+    color: black;
+  }
+
+  &--link { text-decoration: underline; }
+  &--link:hover { opacity: 1; }
+}
+
+.Toast__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+@keyframes showToast {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  10% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+  
+  100% {
+    opacity: 0;
+    visibility: hidden;  
+  }
+}

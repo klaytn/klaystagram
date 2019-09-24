@@ -1,0 +1,19 @@
+.WalletInfo__address,
+.WalletInfo__balance {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.WalletInfo__faucet {
+  font-size: 12px;
+  color: $brown-grey;
+}
+
+.WalletInfo__link {
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 8px;
+  cursor: pointer;
+
+  &:hover { text-decoration: underline; }
+}

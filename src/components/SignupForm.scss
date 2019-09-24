@@ -1,0 +1,15 @@
+.SignupForm__input {
+  margin-bottom: 16px;
+  input {
+    padding-left: 48px;
+    background: 16px center / 24px no-repeat url('/images/icon-lock.png');
+  }
+}
+
+.SignupForm__button {
+  margin-bottom: 80px;
+
+  @include breakpoint("max-card") {
+    margin-bottom: 30px;
+  }
+}
