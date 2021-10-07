@@ -26,7 +26,7 @@ Klaystagram is a practical BApp examples with complete source code and explanati
 ### 3) npm package information
 > dependencies
 ```
-The klaystagram project is optimized for caver-js version "1.1.2".
+The klaystagram project is optimized for caver-js version "1.6.4".
 caver-js needs confirmation before updating.
 ```
 

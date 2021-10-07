@@ -40,4 +40,7 @@ module.exports = {
       systemvars: true,
     }),
   ],
+  node: {
+    fs: 'empty',
+  },
 }
