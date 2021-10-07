@@ -14,7 +14,7 @@
   "author": "developer@klaytn.com",
   "license": "MIT",
   "dependencies": {
-    "caver-js": "1.1.2",
+    "caver-js": "1.6.4",
     "classnames": "^2.2.5",
     "dotenv": "^6.0.0",
     "dotenv-webpack": "^1.5.7",
